@@ -1,0 +1,46 @@
+<h5>Parked Vehicles</h5>
+<div class="container-fluid" *ngIf="parkingLot">
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table">
+        <thead>
+          <tr><th></th><th><a href="#" (click)="sortVehiclesById()" title="Sort Ascending">Id</a></th><th><a href="#" (click)="sortVehiclesByType()" title="Sort Ascending">Type</a></th><th>Number of Wheels</th><th>Surcharge</th></tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let vehicle of parkingLot.vehicles">
+            <td><button (click)="unPark(vehicle)">Un-Park</button></td>
+            <td>{{vehicle.id}}</td>
+            <td>{{vehicle.vehicleType}}</td>
+            <td>{{vehicle.numberOfWheels}}</td>
+            <td>{{vehicle.surcharge | currency}}</td>
+          </tr>
+        </tbody>
+        <tfoot></tfoot>
+      </table>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">Total Money Collected: {{ parkingLot.totalMoneyCollected | currency}}</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      Total Money Collected By Vehicle Type
+      <table class="table">
+        <thead>
+          <tr><th>Compact</th><th>Electric</th><th>Full</th><th>Motorcycle</th><th>Truck</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ parkingLot.totalMoneyCollectedByVehicleType["Compact"] | currency }}</td>
+            <td>{{ parkingLot.totalMoneyCollectedByVehicleType["Electric"] | currency }}</td>
+            <td>{{ parkingLot.totalMoneyCollectedByVehicleType["Full"] | currency }}</td>
+            <td>{{ parkingLot.totalMoneyCollectedByVehicleType["Motorcycle"] | currency }}</td>
+            <td>{{ parkingLot.totalMoneyCollectedByVehicleType["Truck"] | currency }}</td>
+          </tr>
+        </tbody>
+        <tfoot></tfoot>
+      </table>
+    </div>
+  </div>
+</div>
+<vehicle (parked)="onParked($event)"></vehicle>

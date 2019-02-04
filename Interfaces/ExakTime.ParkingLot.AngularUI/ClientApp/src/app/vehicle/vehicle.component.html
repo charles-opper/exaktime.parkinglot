@@ -1,0 +1,12 @@
+<h5>Park New Vehicle</h5>
+<form #ParkVehicleForm="ngForm">
+  <label for="vehicleType">Select Vehicle Type:</label>
+  <select id="vehicleType" name="vehicleType" [(ngModel)]="vehicleType">
+    <option value="Compact">Compact</option>
+    <option value="Electric">Electric</option>
+    <option value="Full">Full</option>
+    <option value="Motorcycle">Motorcycle</option>
+    <option value="Truck">Truck</option>
+  </select>
+  <button (click)="park(ParkVehicleForm)">Park</button>
+</form>

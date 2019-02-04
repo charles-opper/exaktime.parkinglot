@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExakTime.ParkingLot.Core", "AppCore\ExakTime.ParkingLot.Core.csproj", "{2868A593-AC6F-405C-B1D4-B02556FF96B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppCore", "AppCore", "{1EEC4268-5CF5-41C8-A907-D81E856314A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{CB14976F-3FD9-4705-867B-D0D27EE81608}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7532D68C-26F8-4698-AAFF-BD84DB3348E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interfaces", "Interfaces", "{A1CB94BD-B8C2-4742-A113-5EC723442EB6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExakTime.ParkingLot.Core.Tests", "Tests\ExakTime.ParkingLot.Core.Tests\ExakTime.ParkingLot.Core.Tests.csproj", "{936D61AB-8993-4934-852A-497D64D5B449}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExakTime.ParkingLot.AngularUI", "ExakTime.ParkingLot.AngularUI", "{5DD4B112-A323-45F2-B021-E285927EDB0F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExakTime.ParkingLot.AngularUI", "Interfaces\ExakTime.ParkingLot.AngularUI\ExakTime.ParkingLot.AngularUI.csproj", "{E1F47B47-E8E8-4AFA-954C-66068AF717CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2868A593-AC6F-405C-B1D4-B02556FF96B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2868A593-AC6F-405C-B1D4-B02556FF96B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2868A593-AC6F-405C-B1D4-B02556FF96B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2868A593-AC6F-405C-B1D4-B02556FF96B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{936D61AB-8993-4934-852A-497D64D5B449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{936D61AB-8993-4934-852A-497D64D5B449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{936D61AB-8993-4934-852A-497D64D5B449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{936D61AB-8993-4934-852A-497D64D5B449}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1F47B47-E8E8-4AFA-954C-66068AF717CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1F47B47-E8E8-4AFA-954C-66068AF717CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1F47B47-E8E8-4AFA-954C-66068AF717CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1F47B47-E8E8-4AFA-954C-66068AF717CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2868A593-AC6F-405C-B1D4-B02556FF96B8} = {1EEC4268-5CF5-41C8-A907-D81E856314A3}
+		{936D61AB-8993-4934-852A-497D64D5B449} = {7532D68C-26F8-4698-AAFF-BD84DB3348E4}
+		{5DD4B112-A323-45F2-B021-E285927EDB0F} = {A1CB94BD-B8C2-4742-A113-5EC723442EB6}
+		{E1F47B47-E8E8-4AFA-954C-66068AF717CA} = {5DD4B112-A323-45F2-B021-E285927EDB0F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01008A93-6DF5-4A3D-ACF8-43240B91FFE0}
+	EndGlobalSection
+EndGlobal
